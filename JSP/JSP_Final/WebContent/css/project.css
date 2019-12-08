@@ -1,0 +1,81 @@
+@charset "EUC-KR";
+td{
+	 background: yellow; 
+	 font: 20px ±Ã¼­ bold;
+	 width : 400px;
+	 text-align: center;
+}
+
+
+input{
+	color: red;
+	font: 40px ±¼¸² bold;
+	background : grey; 
+}
+
+#total{
+	width: 800px;
+	height: 800px;
+	background-image: url(../img/back.png)
+}
+button{
+	color : yellow;
+	font : 45px ±Ã¼­ bold italic;
+	background-color: blue;
+}
+a{
+	text-decoration: none;
+	color : red;
+}
+
+button:hover{
+	background-color:  orange;
+}
+
+#top{
+	width: 800px;
+	height: 100px;
+	background: yellow;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left:1px; 
+	
+}
+#top2{
+	border-top : 5px solid yellow;
+	border-bottom : 10px double blue;
+	box-shadow : 10px 10px yellow;
+	border-radius: 100px 10px;
+	background: green;
+	color: white;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	height: 70px;
+	width: 250px;
+}
+#content{
+	color: blue;
+	font: 25px ±Ã¼­bold;
+}
+
+
+body{
+	color: blue;/* ±ÛÀÚ»ö : ÆÄ¶û*/
+}
+li {
+	list-style: none;
+	float: left;
+	padding: 15px;
+}
+li:first-child{ border-radius: 15px 0 0 15px;
+}
+
+li:last-child{ border-radius: 0 15px 15px 0 ;
+}
+li:nth-child(2n) {/* Â¦¼öÄ­ »ö±ò */
+	background: red;
+}
+li:nth-child(2n+1) {/* È¦¼öÄ­ »ö±ò */
+	background: grey;
+}

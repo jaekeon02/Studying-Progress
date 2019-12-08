@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.btn').click(function() {
+		$('div').append('<img src=img/dobi.jpg>')	
+	});
+	$('.btn2').click(function() {
+		$('div').append('<h3>도비는 자유에요<h3>')
+	})
+	
+});
+</script>
+</head>
+<body>
+<input type="button" value="이미지추가" class="btn">
+<input type="button" value="글자추가" class="btn2">
+<div></div>
+</body>
+</html>

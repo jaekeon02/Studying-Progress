@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.btn').click(function() {
+		reValue=$('.reply').val();
+		wrValue=$('.writer').val();
+		$.ajax({
+			url: "sever4.jsp",
+			data : {
+				reply : reValue,/* 복수일 경우 쉼표로 구분  */
+				writer : wrValue
+			},/*쉼표로 구분  */
+			/*data 넘길값이 있으면 쓰고 없으면 안써도됨  */
+			success:function(result){
+				$('div').append('<img src=img/dobi.jpg width=50>');
+				$('div').append(result);
+				
+			}
+		});
+		
+	})
+});
+
+</script>
+</head>
+<body>
+<img src="img/dobi.jpg">
+<hr color="red">
+<!-- 댓글을 입력하는 곳 -->
+
+
+댓글 작성자<input type="text" class="writer"><br>
+댓글 내용<input type="text" class="reply"><br>
+<input type="button" class="btn" value="댓글달기"><br>
+<!-- 댓글이 추가되는 곳 -->
+<div></div>
+
+</body>
+</html>

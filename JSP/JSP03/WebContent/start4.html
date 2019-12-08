@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/out.css"/>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".btn").click(function() {
+		idValue=$('.id').val()
+		console.log('입력한 ID는'+idValue)
+		if(idValue=="root"){//문자열 비교이기에 ''로 감싸줄것
+			location.href='sever2.jsp?id='+idValue}
+		else {
+			$('div').text("root를 입력하세요")
+				}
+	})
+	
+})
+
+</script>
+</head>
+<body>
+id입력<input type="text" class="id" name="id"><br>
+<div style="color :red;"> </div>
+<!-- 자바스크립트에서 값을 가지고 오거나 넣을때 -->
+<!-- input - val() --> <!-- 태그사이의 값 - text() -->
+<input type="button" class="btn" value="내용 체크">
+</body>
+</html>
